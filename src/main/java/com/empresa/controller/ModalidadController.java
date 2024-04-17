@@ -24,13 +24,13 @@ public class ModalidadController {
 	
 	
 	@GetMapping
-	public List<Modalidad> listaModalidad(){
+	public List<Modalidad> listaModalidadNA(){
 		List<Modalidad> lstSalida = service.listaModalidad();
 		return lstSalida;
 	}
 	
 	@PostMapping
-	public ResponseEntity<?>  insertaModalidad(@RequestBody Modalidad obj){
+	public ResponseEntity<?>  insertaModalidadNA(@RequestBody Modalidad obj){ /*@RequestBody convierte el parámetro en tipo Modalidad*/
 		List<String> lstSalida = new ArrayList<String>();
 		
 		obj.setEstado(1);
