@@ -30,7 +30,7 @@ public class ModalidadController {
 	}
 	
 	@PostMapping
-	public ResponseEntity<?>  insertaModalidadNA(@RequestBody Modalidad obj){ /*@RequestBody convierte el parámetro en tipo Modalidad*/
+	public ResponseEntity<?>  insertaModalidadNA(@RequestBody Modalidad obj){ /*@RequestBody convierte el parámetro de tipo JSON a Modalidad*/
 		List<String> lstSalida = new ArrayList<String>();
 		
 		obj.setEstado(1);
